@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"><title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="HTML_07_tableaux_fichiers/font-awesome.css">
+        <link rel="stylesheet" href="HTML_07_tableaux_fichiers/bootstrap.css">
+        <link rel="stylesheet" href="HTML_07_tableaux_fichiers/darcula.css">
+        <!-- <link rel="stylesheet" href="/css/highlight/line-number.css"> -->
+        <link rel="stylesheet" href="HTML_07_tableaux_fichiers/github-markdown.css">
+        <!-- <link rel="stylesheet" href="/css/markdown_foad.css"> -->
+        <link rel="stylesheet" href="HTML_07_tableaux_fichiers/menu-markdown.css">
+        <!-- <script src="/js/highlightjs-line-numbers.min.js"></script> -->
+        <script src="HTML_07_tableaux_fichiers/jquery-3.js"></script>
+        <script src="HTML_07_tableaux_fichiers/popper.js"></script>
+        <script src="HTML_07_tableaux_fichiers/bootstrap.js"></script>
+        <script src="HTML_07_tableaux_fichiers/highlight.js"></script>
+        </head><body><div class="container"><div class="markdown-body"><!-- MAJ : 24/07/2019, HB -->
+<h1 id="1">HTML - 07 - Tableaux</h1>
+<p>Les tableaux sont très largement utilisés dans le développement de 
+pages web. Ils sont indispensables pour pouvoir présenter l'information 
+de manière structurée et facilement lisible.
+ </p>
+<h2 id="3">Création d'un tableau</h2>
+<ul>
+<li>On crée un tableau à l'aide de la balise <code>&lt;table&gt;</code> et on le ferme via <code>&lt;/table&gt;</code>. </li>
+<li>Un tableau est composé de plusieurs lignes encadrées par les balises <code>&lt;tr&gt;</code> et <code>&lt;/tr&gt;</code>. </li>
+<li>Chaque ligne est composée de plusieurs cellules, encadrées par les balises <code>&lt;td&gt;</code> et <code>&lt;/td&gt;</code>. </li>
+</ul>
+<p><strong>Exemple de code HTML d'un tableau :</strong> </p>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Pierre<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>65 800<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>53 200<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>46 400<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Paul<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>88 000<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>51 500<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>62 300<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Jacques<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>74 400<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>64 200<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>78 900<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>    
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span> </code></pre>
+<blockquote>
+<p>Aux débuts du web, on utilisait les tableaux pour la mise en page 
+(structuration en lignes, colonnes). Cet usage est désormais à 
+proscrire, la balise <code>&lt;table&gt;</code> devant être réservée à 
+la présentation de données en tableau (= données tabulaires). 
+Aujourd'hui la structuration et le positionnement des éléments se fait 
+via des balises telles que <code>&lt;div&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code> etc. associées aux feuilles de styles CSS.</p>
+</blockquote>
+<h3 id="8">Légende</h3>
+<p>Il est possible d'ajouter un titre (légende) à un tableau via la balise <code>&lt;caption&gt;</code>, qui doit être placée immédiatement sous la balise <code>&lt;table&gt;</code> :</p>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">caption</span>&gt;</span>Ventes T1<span class="hljs-tag">&lt;/<span class="hljs-name">caption</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span> …</code></pre>
+<p><strong>Exercice</strong></p>
+<p>Ajoutez la balise <code>&lt;caption&gt;</code> dans votre fichier HTML. </p>
+<h2 id="13">Mise en forme avancée</h2>
+<h3 id="14">Entêtes et pieds</h3>
+<h4 id="15">Entêtes</h4>
+<p>L'entête des colonnes, c'est-à-dire chaque cellule de la première 
+ligne qui sert de titre de colonnes est repéré par les balises <code>&lt;th&gt;</code> incluses dans une balise <code>&lt;thead&gt;</code> et une ligne <code>&lt;tr&gt;</code> :</p>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">caption</span>&gt;</span>Ventes T1<span class="hljs-tag">&lt;/<span class="hljs-name">caption</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span> - <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Janvier<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Février<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Mars<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span> 
+<span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span></code></pre>
+<p>Cette balise doit être présente qu'une seule fois par tableau. En cas d'entêtes multiples, il faudra recourir aux balises <code>&lt;colgroup&gt;</code> et <code>&lt;col&gt;</code> (voir à la fin de ce document).  </p>
+<h4 id="19">Pieds</h4>
+<p>La balise <code>&lt;tfoot&gt;</code> permet d'indiquer des cellules 
+en pied de tableau, par exemple un total des valeurs d'une colonne dans 
+un tableau de chiffres : </p>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">tfoot</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Total<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>228 200<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>168 900<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>187 600<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tfoot</span>&gt;</span>    
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span> </code></pre>
+<p>Cette balise doit être présente qu'une seule fois par tableau. En cas d'entêtes multiples, il faudra recourir aux balises <code>&lt;colgroup&gt;</code> et <code>&lt;col&gt;</code> (voir à la fin de ce document).<br>
+Contrairement à <code>&lt;thead&gt;</code> qui doit avoir comme balises descendantes <code>&lt;th&gt;</code>, <code>&lt;tfoot&gt;</code> comprend des balises <code>&lt;td&gt;</code>.</p>
+<h4 id="23">La balise <code>&lt;tbody&gt;</code></h4>
+<p>Les balises <code>&lt;thead&gt;</code> et <code>&lt;tfoot&gt;</code> peuvent être utilisées ensemble ou de façon séparée : l'utilisation se fait en fonction des données du tableau.</p>
+<p>Par contre, dès lors que l'une des 2 est présente, il convient d'utiliser également la balise <code>&lt;tbody&gt;</code> qui délimite le contenu principal (<em>corps</em>) du tableau : </p>
+<pre><code class="hljs dts">…
+<span class="hljs-params">&lt;/thead&gt;</span>
+<span class="hljs-params">&lt;tbody&gt;</span>
+   <span class="hljs-params">&lt;tr&gt;</span>
+     <span class="hljs-params">&lt;td&gt;</span>Total<span class="hljs-params">&lt;/td&gt;</span>
+     <span class="hljs-params">&lt;td&gt;</span><span class="hljs-number">228</span> <span class="hljs-number">200</span><span class="hljs-params">&lt;/td&gt;</span>
+     <span class="hljs-params">&lt;td&gt;</span><span class="hljs-number">168</span> <span class="hljs-number">900</span><span class="hljs-params">&lt;/td&gt;</span>
+     <span class="hljs-params">&lt;td&gt;</span><span class="hljs-number">187</span> <span class="hljs-number">600</span><span class="hljs-params">&lt;/td&gt;</span>
+   <span class="hljs-params">&lt;/tr&gt;</span>
+<span class="hljs-params">&lt;/tbody
+&lt;tfoot&gt;</span> 
+… </code></pre>
+<p>Comme on le voit, la balise <code>&lt;tbody&gt;</code> se place en toute logique après la fermeture de la balise <code>&lt;thead&gt;</code> et se termine avant l'ouverture de balise <code>&lt;tfoot&gt;</code>.</p>
+<p><strong>Exercice</strong></p>
+<p>Ajoutez la balise <code>&lt;tbody&gt;</code> à votre tableau.</p>
+<h2 id="30">Regroupement de lignes/colonnes</h2>
+<p>On peut regrouper plusieurs lignes ou plusieurs colonnes afin d'obtenir des cellules plus grandes. </p>
+<h3 id="32">L'attribut <code>colspan</code></h3>
+<p>L'attribut <code>colspan</code> est à appliquer sur une balise de cellule <code>&lt;td&gt;</code>
+ et prend une valeur numérique qui indique le nombre de colonnes à 
+regrouper. La cellule s’étendra sur le nombre de colonnes indiquées 
+comme valeur :</p>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>Ventes du 1<span class="hljs-tag">&lt;<span class="hljs-name">sup</span>&gt;</span>er<span class="hljs-tag">&lt;/<span class="hljs-name">sup</span>&gt;</span> trimestre<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></code></pre>
+<p><strong>Exercice</strong> </p>
+<p>Reprenez votre fichier HTML et ajoutez le code ci-dessus après votre balise <code>&lt;thead&gt;</code>. Observez ce qui se passe.</p>
+<h3 id="37">L'attribut <code>rowspan</code></h3>
+<p>L'attribut <code>rowspan</code> est à appliquer sur une balise de cellule <code>&lt;td&gt;</code>
+ et prend une valeur numérique qui indique le nombre de lignes à 
+regrouper. La cellule s'étendra sur le nombre de lignes indiquées comme 
+valeur :</p>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">rowspan</span>=<span class="hljs-string">"2"</span>&gt;</span>Total<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></code></pre>
+<p><strong>Exercice</strong></p>
+<p>Reprenez votre fichier HTML, remplacez la ligne concernant Jacques par le code ci-dessous et observez ce qui se passe :</p>
+<pre><code class="hljs xml">  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">rowspan</span>=<span class="hljs-string">"2"</span>&gt;</span>Jacques<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span> 
+     <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>74 400<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>64 200<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>78 900<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>   
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>68 100<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>76 700<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>99 500<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>  </code></pre>
+<h2 id="43">Habillage de colonnes et de lignes</h2>
+<p>HTML 5 crée les nouvelles balises <code>&lt;colgroup&gt;</code> et <code>&lt;col&gt;</code>
+ qui permettent, combinées à des feuilles de styles CSS, de grouper via 
+un habillage visuel (et uniquement visuel contrairement à <code>colspan</code> et <code>rowspan</code>)
+ les colonnes d'un tableau. Par exemple, on appliquera une couleur de 
+fond sur les 2 premières colonnes tandis qu'une troisième colonne aura 
+une autre couleur de fond.</p>
+<blockquote>
+<p><a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_colgroup_test">Exemple</a></p>
+</blockquote>
+<h2 id="46">Exercice</h2>
+<blockquote>
+<p>Vous aurez besoin des éléments contenus dans <a target="_blank" href="https://ncode.amorce.org/ressources/Pool/TB_DEV/WEB_HTML/jarditou_html_zip.zip">cette archive zip</a>.</p>
+</blockquote>
+<p>Reproduisez le tableau suivant :</p>
+<p><img src="HTML_07_tableaux_fichiers/tableau_jarditou_html.JPG" alt="images/HTML_07_tableaux_exercice.jpg">.</p></div><div class="menu-markdown" style="width: 37px; height: 33px;"><img src="HTML_07_tableaux_fichiers/menu.png" style=""><div data-id="1" class="titre">HTML - 07 - Tableaux</div><div data-id="3">Création d'un tableau</div><div data-id="8">&nbsp;&nbsp;&nbsp;&nbsp;Légende</div><div data-id="13">Mise en forme avancée</div><div data-id="14">&nbsp;&nbsp;&nbsp;&nbsp;Entêtes et pieds</div><div data-id="15">&nbsp;&nbsp;&nbsp;&nbsp;Entêtes</div><div data-id="19">&nbsp;&nbsp;&nbsp;&nbsp;Pieds</div><div data-id="23">&nbsp;&nbsp;&nbsp;&nbsp;La balise <code>&lt;tbody&gt;</code></div><div data-id="30">Regroupement de lignes/colonnes</div><div data-id="32">&nbsp;&nbsp;&nbsp;&nbsp;L'attribut <code>colspan</code></div><div data-id="37">&nbsp;&nbsp;&nbsp;&nbsp;L'attribut <code>rowspan</code></div><div data-id="43">Habillage de colonnes et de lignes</div><div data-id="46">Exercice</div></div></div><script>hljs.initHighlightingOnLoad();//hljs.initLineNumbersOnLoad();</script><script src="HTML_07_tableaux_fichiers/menu-markdown.js"></script></body></html>
