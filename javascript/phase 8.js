@@ -1,15 +1,48 @@
+////////////////////////////////////////////////exo 1///////////////////////////////////////////////////////////////////////////////////::
 
-let cpt = 0;
-  
-while(true){
-let N = window.prompt("entrer un prénom");
-  if(N)
-    {
-        N=N;
-        cpt++;
-        
-    }else{
-        break;
-    }
+
+//let cpt = 0;
+
+//while(true){
+//let N = window.prompt("entrer un prénom");
+  //if(N)
+  // {    
+   // N=N;
+   // cpt++;
+  //  console.log(N)
+//}
+   // else
+  //  {
+ //       break;
+  //  }
+//}
+//console.log(cpt++);
+
+
+////////////////////////////////////////////////////////exo 2////////////////////////////////////////////////////////////////////////////////////////
+
+
+let N = window.prompt("entrez un nombre");
+
+
+
+console.log("Table de multiplication par 5");
+console.log("///////////////////////////////");
+
+for (i=0; i<=N; i++)
+{
+    resultat = N - i;
+
+    console.log("3 - "+i+" = "+resultat);
 }
-console.log(cpt++);
+if
+{
+
+}
+
+
+// instructions exécutées après le for (i vaut 10)
+console.log("fin de la boucle");
+
+
+
