@@ -36,27 +36,46 @@
 //////////////////////////////////////////////////////exo 3 moyenne ////////////////////////////////////////////////////////////////////////////////////////
 
 
-let cpt = 0;
-let somme = 0;
-let ok = true;
-let moyenne
-while(ok)
-{
-  let N = Number(window.prompt ("saisir un nombre "));
-    somme = somme + N;
-    cpt++;
-    console.log(somme);
-    console.log(cpt);
-    ok = true
-    if(N <= 0){
-      ok = false;
-    }else{
-      continue;
-    }
-} 
+//let cpt = 0;
+//let somme = 0;
+//let ok = true;
+//let moyenne
+//while(ok)
+//{
+  //let N = Number(window.prompt ("saisir un nombre "));
+    //somme = somme + N;
+    //cpt++;
+    //console.log(somme);
+    //console.log(cpt);
+    //ok = true
+    //if(N <= 0){
+      //ok = false;
+    //}else{
+    //  continue;
+ //   }
+//} 
 
-moyenne = cpt/somme;
-console.log(moyenne);
+//moyenne = cpt/somme;
+//console.log(moyenne);
+
+
+//////////////////////////////////////////////////////////////exo 4 multiples ////////////////////////////////////////////////////////////////////////////////////////
+
+let x=window.prompt ("entrez un nombre");
+let N=window.prompt ("Nul germain");
+for (i=1; i<=N; i++)
+{
+  let r = i * x;
+  console.log (i + "*" + x + "=" + r);
+}
+
+
+
+
+
+
+
+
 
 
 
