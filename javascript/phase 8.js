@@ -61,13 +61,22 @@
 
 //////////////////////////////////////////////////////////////exo 4 multiples ////////////////////////////////////////////////////////////////////////////////////////
 
-let x=window.prompt ("entrez un nombre");
-let N=window.prompt ("Nul germain");
-for (i=1; i<=N; i++)
-{
-  let r = i * x;
-  console.log (i + "*" + x + "=" + r);
-}
+//let x=window.prompt ("entrez un nombre");
+//let N=window.prompt ("entrez un nombre");
+//for (i=1; i<=N; i++)
+//{
+//  let r = i * x;
+//  console.log (i + "*" + x + "=" + r);
+//}
+//////////////////////////////////////////////////////////////exo 5 nombres de voyelles//////////////////////////////////////////////////////////////////////////////////////
+
+
+let N= window.prompt ("entrez un mot");
+
+
+
+
+
 
 
 
