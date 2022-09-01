@@ -71,7 +71,26 @@
 //////////////////////////////////////////////////////////////exo 5 nombres de voyelles//////////////////////////////////////////////////////////////////////////////////////
 
 
-let N= window.prompt ("entrez un mot");
+let voyelles = window.prompt ("entrez un mot");
+let vow=0
+let lettre;
+for (i=0;i<voyelles.length;i++){
+lettre = voyelles.substring(i,i+1)
+if (lettre.indexOf("a")!=-1){
+vow++;}
+if (lettre.indexOf("e")!=-1){
+vow++;}
+if (lettre.indexOf ("i")!=-1){
+vow++;}
+if (lettre.indexOf ("o")!=-1){
+vow++;}
+if (lettre.indexOf ("u")!=-1){
+vow++;}
+if (lettre.indexOf ("y")!=-1){
+vow++;}
+}
+console.log ("le nombres de voyelles est de "+vow );
+
 
 
 
