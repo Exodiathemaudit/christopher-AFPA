@@ -1,4 +1,4 @@
-function maFonction (arg1,arg2,arg3)
-{
-    
+function affichage(){
+    var a= document.createElement("img");
+    document.body.appendChild(a)
 }
