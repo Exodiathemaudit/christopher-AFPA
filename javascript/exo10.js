@@ -26,24 +26,37 @@
 // ct(myTableau);
 
 ////////////////////////////////////////////////exo 2:///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-pr = window.prompt
-
-function getInteger(){return pr("entrez un entier");}
-
-function InitTab(size){
 
 
-
-tab = array(size)
-
-}
-function saisieTab
-for(let i = 0;i < tab; i++){
-    
-}
+function getInteger()
 {
+    let e = window.prompt("entrez un entier");
+    console.log(e);
+}
+getInteger();
+
+
+function InitTab(){
+
+t = window.prompt("entrez la taille du tableau");
+tab = new Array
+tab.length = t;
+console.log(tab);
+}
+InitTab();
+
+function saisieTab()
+{
+    for(let p = 0; p < t; i++ ){
+    
+    }
 
 }
+
+
+
+
+
 /* Utilisateur */
 
 
