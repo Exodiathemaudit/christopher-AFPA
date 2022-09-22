@@ -26,11 +26,11 @@
 // ct(myTableau);
 
 ////////////////////////////////////////////////exo 2:///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+let t ;
 
 function getInteger()
 {
-    let e = window.prompt("entrez un entier");
+    let e = Number(window.prompt("entrez un entier"));
     console.log(e);
 }
 getInteger();
@@ -38,7 +38,7 @@ getInteger();
 
 function InitTab(){
 
-t = window.prompt("entrez la taille du tableau");
+t = Number(window.prompt("entrez la taille du tableau"));
 tab = new Array
 tab.length = t;
 console.log(tab);
@@ -47,20 +47,41 @@ InitTab();
 
 function saisieTab()
 {
-    for(let p = 0; p < t; i++ ){
+    for(let p = 0; p < t; p++ ){
+    let y= window.prompt("saisie des différents postes");
+    tab.push(y);
     
     }
+}
+saisieTab();
+
+function afficheTab()
+{
+    alert(tab)
+    
+}
+console.table(tab);
+afficheTab();
+
+function rechercheTab()
+{
+
+let z =  window.prompt("saisir le numéro de la case");
 
 }
+rechercheTab();
+
+
+
+
+
+
 
 
 
 
 
 /* Utilisateur */
-
-
-alert(getInteger());
 
 
 
