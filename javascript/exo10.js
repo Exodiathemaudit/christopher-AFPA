@@ -68,8 +68,8 @@ function rechercheTab()
 {
 
 let z =  window.prompt("saisir le numéro de la case");
-tab.indexOf
-alert()
+tab.indexOf(z)
+console.log(tab.indexOf(z));
 }
 
 rechercheTab();
