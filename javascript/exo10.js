@@ -47,6 +47,7 @@ InitTab();
 
 function saisieTab()
 {
+  
     for(let p = 0; p < t; p++ ){
     let y= window.prompt("saisie des différents postes");
     tab.push(y);
@@ -67,11 +68,20 @@ function rechercheTab()
 {
 
 let z =  window.prompt("saisir le numéro de la case");
-
+tab.indexOf
+alert()
 }
+
 rechercheTab();
 
 
+function infoTab()
+{
+
+
+}
+
+infoTab();
 
 
 
@@ -81,7 +91,7 @@ rechercheTab();
 
 
 
-/* Utilisateur */
+
 
 
 
