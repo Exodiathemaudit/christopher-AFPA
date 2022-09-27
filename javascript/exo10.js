@@ -25,103 +25,76 @@
 // }
 // ct(myTableau);
 
-////////////////////////////////////////////////exo 2:///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// let t ;
-
-// function getInteger()
-// {
-//     let e = Number(window.prompt("entrez un entier"));
-//     console.log(e);
-// }
-// getInteger();
+//////////////////////////////////////////////exo 2:///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-// function InitTab(){
+function getInteger()
+{
+    let e = Number(window.prompt("entrez un entier"));
+    console.log(e);
+}
+getInteger();
 
-// t = Number(window.prompt("entrez la taille du tableau"));
-// tab = new Array
-// tab.length = t;
-// console.log(tab);
-// }
-// InitTab();
 
-// function saisieTab()
-// {
+function InitTab(){
 
-//     for(let p = 0; p < t; p++ ){
-//     let y= window.prompt("saisie des différents postes");
-//     tab.push(y);
+t = Number(window.prompt("entrez la taille du tableau"));
+tab = new Array
+tab.length = t;
+console.log(tab);
+}
+InitTab();
+
+function saisieTab()
+{
+
+    for(let p = 0; p < t; p++ ){
+    let y= window.prompt("saisie des différents postes");
+    tab.push(y);
     
-//     }
-// }
-// saisieTab();
+    }
+}
+saisieTab();
 
-// function afficheTab()
-// {
-//     alert(tab)
+function afficheTab()
+{
+    alert(tab)
 
     
-// }
-// console.table(tab);
-// afficheTab();
+}
+console.table(tab);
+afficheTab();
 
-// function rechercheTab()
-// {
+function rechercheTab()
+{
 
-// let z =  window.prompt("saisir le numéro de la case");
-// tab.indexOf(z)
-// console.log(tab.indexOf(z));
-// }
+let z =  window.prompt("saisir le numéro de la case");
+tab.indexOf(z)
+console.log(tab.indexOf(z));
+}
 
-// rechercheTab();
+rechercheTab();
 
 
-// function infoTab()
-// {
-// let y 
+function infoTab()
+{
+let y 
 
-// }
+}
 
-// infoTab();
+infoTab();
 
 
 /////////////////////////////////////////////////////////////////////////exo 3 tri à bulles //////////////////////////////////////////////////////////////////////////////////////////////
 
-function sort(tab){
-let changed;
-do{
-    changed = false;
 
-for(let i=0; i < tab.lenght-1; i++){
-if(tab[i] > tab[i+1]){
-    let tmp = tab[i];
-    tab[i] = tab[i+1];
-    tab[i+1] = tmp;
-    changed = true;
+function tri()
+{
+    let d = window.prompt("");
+    tab.indexOf(d);
+    console.log(tab.indexOf(d));
 }
-}
-}
-while(changed);
-}
-let tab = [5, 8, 11, 6, 1, 9, 3];
-sort(tab);
-console.log(tab);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+tri();
 
 
 
