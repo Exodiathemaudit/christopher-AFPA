@@ -9,22 +9,23 @@
 </head>
 <body>
 <form>
-    <fieldset>
+<fieldset>
         <legend><strong>Vos coordonnées :</strong></legend><Br>
-        <strong>* Ces zones sont obligatoires pour envoyer le formulaire.</strong><br><br>
-
-        <label for="société"><strong>Société:</strong></label><input type="text" name="société" id="société"><br><br>
+        
+        
+<div>
+        <label for="société"><strong>Société: </strong> </label><input type="text" name="société" id="société"><br><br>
         <label for="contact"><strong>Personne à contacter:</strong> </label><input type="text" name="contact" id="contact"><br><br>
         <label for="Adresse de l'entreprise:"><strong>Adresse de l'entreprise:</strong> 
-        <textarea name= "commentaires" rows="2" cols= "20"></textarea><br>
-        <label for="code postal"><strong>Code postal :</strong> </label><input type="text" name="code postal" id="code postal"><br>
-        <label for="ville"><strong>Ville :</strong> </label><input type="text" name="ville" id="ville"><br>
-        <label for ="e-mail"><strong>E-mail:</strong></label><input type="text" name="e-mail" id="e-mail"><br>
-        <label for ="télèphone"><strong>Télèphone:</strong> </label><input type="text" name="télèphone" id=" e-mail"><br>
+        <textarea name= "commentaires" rows="2" cols= "20"></textarea><br><br>
+        <label for="code postal"><strong>Code postal :</strong> </label><input type="text" name="code postal" id="code postal"><br><br>
+        <label for="ville"><strong>Ville :</strong> </label><input type="text" name="ville" id="ville"><br><br>
+        <label for ="e-mail"><strong>E-mail:</strong></label><input type="text" name="e-mail" id="e-mail"><br><br>
+        <label for ="télèphone"><strong>Télèphone:</strong> </label><input type="text" name="télèphone" id=" e-mail"><br><br>
         <label for="environnement"><strong>sélectionnez l'environnement technique du projet :</strong></label>
-        
-        <textarea name="l'environnement" rows="2" cols="20"></textarea><br>
-        <select id="couleur"> 
+        <textarea name="l'environnement" rows="2" cols="20"></textarea><br><br>
+<br>
+        <select id="couleur">
         <option value="" selected>choisissez </option> 
         <option value="Bleu">access</option>
         <option value="Rouge">java</option>
@@ -39,10 +40,12 @@
         <option value="vert">SQL Server</option>
         <option value="bleu">Oracle</option>
         <option value="blanc">Autres...</option>
+<br>
+</div>
 </select><br>
 </form>
 <div>
-        <br>
+<br><br>
         <input type="submit" value="envoyer">
         <input type="submit" value="Effacer">
 </div>
