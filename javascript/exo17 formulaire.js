@@ -12,11 +12,11 @@ function verif_form(e) {
 
     //alert("ok nous sommes dans la fonction verif_form !");
 
-    var nom = document.getElementById("toto");
+    var nom = document.getElementById("toto")
 
     if (nom.value == "") {
 
-        alert("Veuillez renseigner votre nom");
+        alert("Veuillez renseigner le nom");
 
         e.preventDefault();
     } else {
@@ -49,4 +49,7 @@ function verif_form(e) {
 
 
 
-}
+// }
+
+let nom = document.getElementById("nom");
+let filtre_nom = new RegExp ("^[A-Za-z]+[ -]*$");
