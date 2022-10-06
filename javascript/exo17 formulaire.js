@@ -3,16 +3,12 @@
 var bouton_envoyer = document.getElementById("go");
 bouton_envoyer.addEventListener("click", verif_form);
 
-
-
-
-
-
-function verif_form(e) {
+function verif_form(e)
+{
 
     //alert("ok nous sommes dans la fonction verif_form !");
 
-    var nom = document.getElementById("toto")
+    var nom = document.getElementById("")
 
     if (nom.value == "") {
 
@@ -28,7 +24,6 @@ function verif_form(e) {
 
         if (resultat == false) {
 
-
             alert("nom saisi pas ok !");
             e.preventDefault();
         }
@@ -37,19 +32,6 @@ function verif_form(e) {
     }
 
 
+ }
 
 
-
-
-
-
-
-
-
-
-
-
-// }
-
-let nom = document.getElementById("nom");
-let filtre_nom = new RegExp ("^[A-Za-z]+[ -]*$");

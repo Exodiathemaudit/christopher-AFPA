@@ -4,7 +4,6 @@ let moyen = 0;
 let vieux = 0;
 let AGE = 0;
 
-
 while (AGE < (100))
 {
 AGE = parseInt(window.prompt("Entrez age"));
