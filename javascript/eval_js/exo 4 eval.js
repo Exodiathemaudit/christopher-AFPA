@@ -32,17 +32,17 @@ console.log("TOTrem = " + TOTrem);
 
 if(TOTrem > 500)
     {
-        PORT = 0;
+    PORT = 0;
     }
 else
     {
-        PORT = (0.02 * TOTrem);
+    PORT = (0.02 * TOTrem);
     }
 console.log("PORT = " + PORT);
 
 if(PORT < 6)
     {
-        PORT = 6;
+    PORT = 6;
     }
 console.log("PORT = " + PORT);
 
