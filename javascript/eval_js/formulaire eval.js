@@ -225,14 +225,16 @@ function verif_prenom(P){
 
 }
 
+//genre
 function verif_HF(hf)
 
     let hf = document.getElementById("genre");
 
     if(hf == 'nul'){
-    filtre
+    filtreHf;
+    resultat = filtreHf.test(hf.value);
 
-    }
+    }if(resultat)
 
 
 
