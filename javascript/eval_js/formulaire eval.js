@@ -1,17 +1,8 @@
 
 
 let bouton_envoyer = document.getElementById("Envoyer");
-bouton_envoyer.addEventListener("click", verif_nom);
-bouton_envoyer.addEventListener("click", verif_prenom);
-bouton_envoyer.addEventListener("click", verif_ville);
-bouton_envoyer.addEventListener("click", verif_adress);
-bouton_envoyer.addEventListener("click", verif_codepostal);
-bouton_envoyer.addEventListener("click", verif_DatedeN);
-bouton_envoyer.addEventListener("click", verif_Email);
-bouton_envoyer.addEventListener("click", verif_HF);
-bouton_envoyer.addEventListener("click", verif_select);
-bouton_envoyer.addEventListener("click", verif_question);
-bouton_envoyer.addEventListener("click", verif_checkbox);
+let bouton_submit = document.getElementById("ok");
+
 
 //Filtre
 let resultat
@@ -26,34 +17,45 @@ let filtreQ = new RegExp("^.+");
 
 
 
-let N = document.getElementById("nom");
-let P = document.getElementById("prenom");
-let G = document.getElementById("genre");
-let D = document.getElementById("date de naissance");
-let C = document.getElementById("code postal");
-let A = document.getElementById("adresse");
-let V = document.getElementById("ville");
-let E = document.getElementById("email");
+let N = document.getElementById("div_nom");
+let P = document.getElementById("div_prenom");
+let G = document.getElementById("div_genre");
+let D = document.getElementById("div_date");
+let C = document.getElementById("div_code");
+let A = document.getElementById("div_adresse");
+let V = document.getElementById("div_ville");
+let E = document.getElementById("div_email");
+   
 
+bouton_submit.addEventListener('click',f_valid);
 
-validation.addEventListener('click',f_valid);
+function f_valid(E){
 
-function f_valid(e){
-
-    if(nom.validity.valueMissing){
-        e.preventDefault();
+    if(N.validity.valueMissing){
+        E.preventDefault();
         // nom_m.textContent = " -- Nom manquant";
         // nom_m.style.color = 'rgb(133, 5, 5)';
     }
     else if(N.test(nom.value) == false){
-        e.preventDefault();
+        E.preventDefault();
         // nom_m.textContent = " -- Format incorrect";
-        // // nom_m.style.color = "orange";
+        // nom_m.style.color = "orange";
     }
     // else{nom_m.textContent =""}
 
 f_valid();
 
+// function f_valid(){
+
+//     if(.validity.valuemissing){
+//         .preventDefault();
+// }
+//     else if(.test(nom.value) == false){
+//         .preventDefault();
+    
+//     }
+
+// f_valid();
 
 
 
