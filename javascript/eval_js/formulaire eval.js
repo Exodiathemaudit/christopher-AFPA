@@ -25,44 +25,115 @@ let C = document.getElementById("div_code");
 let A = document.getElementById("div_adresse");
 let V = document.getElementById("div_ville");
 let E = document.getElementById("div_email");
-   
+
 
 bouton_submit.addEventListener('click',f_valid);
 
+// email
 function f_valid(E){
 
-    if(N.validity.valueMissing){
-        E.preventDefault();
-        // nom_m.textContent = " -- Nom manquant";
-        // nom_m.style.color = 'rgb(133, 5, 5)';
+    if(div_email.validity.valueMissing){
+        div_email.preventDefault();
+        
     }
-    else if(N.test(nom.value) == false){
-        E.preventDefault();
-        // nom_m.textContent = " -- Format incorrect";
-        // nom_m.style.color = "orange";
+    else if(div_email.test(div_email.value) == false){
+        div_email.preventDefault();
+        
     }
-    // else{nom_m.textContent =""}
+}
 
 f_valid();
 
-// function f_valid(){
+// prenom
+function f_valid(P){
+    if(div-prenom.validity.valueMissing){
+        div_prenom.preventDefault();
+}
+else if (div_prenom.test(div_prenom.value) == false){
+        div_prenom.preventDefault();
+}
+}
 
-//     if(.validity.valuemissing){
-//         .preventDefault();
-// }
-//     else if(.test(nom.value) == false){
-//         .preventDefault();
-    
-//     }
+f_valid();
 
-// f_valid();
+//nom
+function f_valid(N){
+    if(div_nom.validity.valueMissing){
+        div_nom.preventDefault();
+}
+    else if (div_nom.test(div_nom.value) == false){
+        div_prenom.preventDefault();
 
+}
+}
 
+f_valid();
 
+// date de naissance
+function f_valid(D){
+    if (div_date.validity.valueMissing){
+        div_date.preventDefault();
 
+}
+    else if (div_date.test(div_date.value) == false){
+        div_date.preventDefault();
 
+}
+}
 
+f_valid();
 
+// code postal
+function f_valid(C){
+    if (div_code.validity.valueMissing){
+        div_code.preventDefault();
+
+}
+    else if (div_code.test(div_code.value) == false){
+        div_code.preventDefault();
+
+}
+}
+f_valid();
+
+// adresse
+function f_valid(A){
+    if (div_adresse.validity.valueMissing){
+        div_adresse.preventDefault();
+
+    }
+        else if (div_adresse.test(div_adresse.value) == false){
+            div_adresse.preventDefault();
+}
+}
+f_valid();
+
+// ville
+function f_valid(v){
+
+    if (div_ville.validity.valueMissing){
+        div_ville.preventDefault();
+    }
+        else if (div_ville.test(div_ville.value) == false){
+            div_ville.preventDefault();
+}
+}
+f_valid();
+
+// genre
+function Fctn_GENRE(event)
+{
+console.log("Fctn_GENRE");
+
+    if ((HOMME.value == "") && (FEMME.value == ""))
+        {
+        console.log("Sélectionnez le Genre");
+        Valid_GENRE = false;
+        document.getElementById("div_genre").innerHTML = "Sélectionnez le Genre";
+        event.preventDefault();
+    } 
+    Valid_GENRE = true;
+}
 
 
 
