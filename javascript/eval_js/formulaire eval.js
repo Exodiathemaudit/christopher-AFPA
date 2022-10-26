@@ -139,9 +139,6 @@ console.log("Fctn_GENRE");
 
 
 
-
-
-
 //Nom
 // function verif_nom(N){
 //     if(N == 'null'){
