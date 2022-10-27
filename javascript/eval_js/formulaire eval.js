@@ -121,22 +121,20 @@ function f_valid(v){
 f_valid();
 
 // genre
-function Fctn_GENRE(event)
-{
-console.log("Fctn_GENRE");
 
-    if ((HOMME.value == "") && (FEMME.value == ""))
-        {
-        console.log("Sélectionnez le Genre");
-        Valid_GENRE = false;
-        document.getElementById("div_genre").innerHTML = "Sélectionnez le Genre";
-        event.preventDefault();
-    } 
-    Valid_GENRE = true;
+if (feminin.validity.valueMissing && masculin.validity.valueMissing){
+    e.preventDefault();
+    S_m.textContent = " --  Veuillez choisir votre sexe";
 }
-
-
-
+else{S_m.textContent =""}
+if (accept.validity.valueMissing){
+    e.preventDefault();
+    accept_m.textContent = " -- Veuillez acceptez pour continuer";
+}
+else {accept_m.textContent =""}
+let feminin = document.getElementById("feminin");
+let masculin = document.getElementById("masculin");
+let accept = document.getElementById("accept");
 
 
 //Nom
