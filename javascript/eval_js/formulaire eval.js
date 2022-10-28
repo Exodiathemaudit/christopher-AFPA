@@ -118,7 +118,7 @@ function f_valid(v){
             div_ville.preventDefault();
 }
 }
-f_valid();
+f_valid(); 
 
 // genre
 
