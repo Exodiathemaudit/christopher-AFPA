@@ -65,3 +65,5 @@ CREATE TABLE catégories(
     cat_parent_id INT,
     PRIMARY KEY (cat_id)
 );
+
+CREATE INDEX pro_ref ON products (pro_ref ASC);
