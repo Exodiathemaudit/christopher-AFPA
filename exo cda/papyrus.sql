@@ -1,6 +1,24 @@
 CREATE DATABASE papyrus;
 USE papyrus;
 
+
+CREATE USER 'util1'@'localhost' IDENTIFIED BY '1234';
+CREATE USER 'util2'@'localhost' IDENTIFIED BY '1234';
+CREATE USER 'util3'@'localhost' IDENTIFIED BY '1234';
+
+
+GRANT ALL PRIVILEGES ON papyrus.* TO 'util1'@'123.45.67.89';
+
+GRANT select
+ON papyrus
+TO util2;
+
+GRANT select
+ON papyrus.fournis
+TO util3;
+
+
+
 CREATE TABLE produit (
   codart char(4) NOT NULL,
   libart varchar(30) NOT NULL,
