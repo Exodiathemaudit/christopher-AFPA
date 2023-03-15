@@ -2,10 +2,13 @@ CREATE DATABASE Exercice2;
 USE Exercice2;
 
 CREATE TABLE station
+    Insert INTO station (num_station, nom_station,)
+    values (00140, 'REEVES', 'HUBERT','A00', 2100);
     num_station
     nom_station
 
 CREATE TABLE Hotel
+    insert INTO hotel
     capacité_hotel
     catégorie_hotel
     nom_hotel
