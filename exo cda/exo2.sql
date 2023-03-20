@@ -6,6 +6,14 @@ CREATE TABLE station(
     nom_station varchar(50)
 
 );
+INSERT INTO station (num_station, nom_station)
+VALUES (12, 'glacius');
+
+INSERT INTO station (num_station, nom_station)
+VALUES (13, 'le majestueux');
+
+INSERT INTO station (num_station, nom_station)
+VALUES (14, 'station de la court');
 
 CREATE TABLE Hotel(
     capacité_hotel int(3),
@@ -13,7 +21,18 @@ CREATE TABLE Hotel(
     nom_hotel varchar(50),
     adresse_hotel varchar(50),
     num_station int(2)
+    PRIMARY KEY (num_station),
+    Foreign Key (num_station) REFERENCES station(num_station)
 );
+INSERT INTO hotel (capacité_hotel, catégorie_hotel, nom_hotel, adresse_hotel, num_station)
+VALUES (1,1, 'le magnifique', 3, 'rue du bas' , 'pralo');
+
+INSERT INTO hotel (capacité_hotel, catégorie_hotel, nom_hotel, adresse_hotel, num_station)
+VALUES (2,1 'hotel du haut', 1, 'rue du haut', 'pralo');
+
+INSERT INTO hotel (capacité_hotel, catégorie_hotel, nom_hotel, adresse_hotel, num_station)
+VALUES (3, 2, 'le narval', 3, 'place de la libération','vonten');
+
 
 CREATE TABLE chambre(
     capacité_chambre int(2),
