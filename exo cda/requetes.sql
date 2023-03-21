@@ -150,8 +150,25 @@ ORDER BY tauxcom asc, nom DESC;
 
 --28 afficher le nom et le prenom des employés.renommer les colonnes.
 
+select CONCAT(prenom, ' ', nom) as 'nomcomplet'
+from employe;
 
 
+--29 Afficher les 5 premiéres lettres du nom des employés.
 
+SELECT nom, substring(nom, 1, 5)
+FROM employe;
 
+--30 afficher le nom et le rang de la lettre r dans le nom des employés.
 
+SELECT nom,locate('r',nom)
+FROM employé;
+
+--31 afficher le nom, le nom en majuscule et le nom en minuscule de l'employé dont le nom est vrante.
+
+select nom, UPPER(nom), CONCAT(UCASE(SUBSTRING(nom, 1, 1)), LOWER(SUBSTRING(nom, 2)))
+from employe;
+
+--32 Afficher le nom et le nombre de caractéres du nom des employé
+SELECT nom, LENGTH(nom)
+FROM employé;
