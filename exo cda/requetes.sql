@@ -4,7 +4,7 @@ SELECT * from employé;
 
 --2 Afficher toutes les informations concernant les départements.
 
-SELECT *FROM dept;
+SELECT * FROM dept;
 
 --3 Afficher le nom, la date d'embauche, le numéro du supérieur,le numéro de département et le salaire de tous les employés.
 

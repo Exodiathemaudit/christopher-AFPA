@@ -186,3 +186,4 @@ HAVING moyenne > (SELECT AVG(salaire) FROM employe WHERE titre = 'representant')
 --10 rechercher le nombre de salaires renseignés et le nombre de taux de commission renseignés.
 
 SELECT COUNT(salaire), COUNT(tauxcom) FROM employe;
+
