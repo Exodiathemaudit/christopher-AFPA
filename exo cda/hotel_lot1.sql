@@ -2,7 +2,7 @@
 
 SELECT hot_nom, hot_ville
 FROM hotel
-
+WHERE hot_id
 --2 Afficher la ville de residence de Mr white
 
 SELECT cli_nom, cli_prénom,cli_adresse
@@ -30,6 +30,18 @@ WHERE cli_ville;
 SELECT hot_nom,hot_ville,hot_categorie
 FROM hotel
 WHERE hot_ville >3;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
