@@ -1,4 +1,4 @@
---1 liste des contact français :
+--1 liste des contact francais :
 
 SELECT 'SupplierID', 'CompanyName', 'ContactName', 'ContactTitle', 'Phone'
 FROM suppliers
@@ -12,7 +12,7 @@ WHERE `CompanyName` = "Exotic Liquids";
 
 
 
---3 Nombre de produits vendus par les fournisseurs Francais dans l'ordre décroissant :
+--3 Nombre de produits vendus par les fournisseurs Francais dans l'ordre decroissant :
 SELECT `CompanyName`, COUNT(productID) resultat
 FROM suppliers
 JOIN products ON suppliers.`SupplierID`= products.`SupplierID`
@@ -41,7 +41,7 @@ HAVING ca > 30000
 ORDER BY ca ASC, Country ASC;
 
 
---6 Liste des pays dont les clients ont passé commande de produits fournis par "Exotic Liquids" :
+--6 Liste des pays dont les clients ont passe commande de produits fournis par "Exotic Liquids" :
 SELECT customer.Country, suppliers.`CompanyName`
 FROM customers
 JOIN orders ON customers.`CustomerID` = order.`CustomerID`
@@ -52,7 +52,7 @@ WHERE `CompanyName`= "Exotic Liquids";
 
 
 --7 montant des ventes de 1997:
-SELECT EXTRACT(YEAR FROM o.OrderDate) AS "Année", SUM(od.quantity*od.UnitPrice) AS MontantVente
+SELECT EXTRACT(YEAR FROM o.OrderDate) AS "Annee", SUM(od.quantity*od.UnitPrice) AS MontantVente
 FROM `order details`od 
 JOIN orders o ON o.`OrderID`
 LEFT JOIN products p ON p.`ProductID`= od.`ProductID`
@@ -68,13 +68,14 @@ GROUP BY EXTRACT(MONTH FROM O.OrderDate);
 
 
 
---9 depuis quelle date le client "du monde entier" n'a plus commandé ?
-SELECT c.CompanyName, MAX (O.OrderDate)
+--9 depuis quelle date le client "du monde entier" n'a plus commande ?
+SELECT c.CompanyName, MAX (o.OrderDate)
 FROM orders o 
-JOIN customers c ON c.CustomerID=O.CustomerID
+JOIN customers c ON c.CustomerID=o.CustomerID
 WHERE c.CompanyName="du monde entier";
 
---10 quel est le délai moyen de livraison en jours ?
-SELECT AVG (DATEDIFF(o.shippeDate,o.OrderDate)) AS "délai livraison en jours"
-FROM Orders o 
-JOIN 
+--10 quel est le delai moyen de livraison en jours ?
+SELECT AVG (DATEDIFF(ShippedDate,OrderDate)) AS "délai livraison en jours"
+FROM orders;
+
+
