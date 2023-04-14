@@ -2,7 +2,7 @@
 --Les procedures stockees doivent prendre en compte les eventuels parametres.
 
 
---requete 9
+--procédure stockées numéro 1
 
 DELIMITER |
 
@@ -16,4 +16,15 @@ END |
 
 DELIMITER;
 
+--procédure stockées numéro 2
 
+DELIMITER |
+
+CREATE Procedure délai moyen (IN date1 VARCHAR(20),date2 VARCHAR(20));
+BEGIN
+    SELECT AVG (DATETIME(date1,date2)) 
+    FROM   orders 
+END
+
+DELIMITER;
+    
