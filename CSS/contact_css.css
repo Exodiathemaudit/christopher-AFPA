@@ -1,0 +1,37 @@
+nav{
+    background-color: black;
+    border:solid black;
+    height: 55px;
+    width:100%;
+    text-align: center;
+}    
+footer{
+    background-color: black;
+    border: solid black;
+    text-align: center;
+}
+a{
+    color: white
+}
+
+li{
+    display: inline-block;
+
+}
+
+.Promo{
+    width: 100%;
+    height: auto;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.text1{
+    border: 25px solid white;
+    font-size: 35px;
+    width: 50%;  
+}
+  
+    

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="formulaire evaljs.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire eval js</title>
+</head>
+<body>
+    <header>
+    <img src="jarditou.jpg" heigt="100" width="300"><br><br>
+    <div class="text1">Tout le jardin</div>
+    </header>
+    
+<nav>
+<ul>
+    <li><a href="exercice final.html">accueil</a></li>
+    <li><a href="tableaujarditou.html">Tableau</a></li>
+    <li><a href="contactjarditou.html">Contact</a></li><br>
+</ul>
+</nav>
+    <img class="Promo" src="index.jpg" width="100%" height="auto"><br><br>
+    <h1>Contact</h1></b>
+    <hr>
+    <p>* Ces zones sont obligatoires</p><br>
+    <form action="http://bienvu.net/script.php" method="GET" id="Form">
+    <fieldset>
+        <legend><b>coordonnées</b></legend><br>
+        <label for="Votre nom*"> Votre nom*: </label><input type="text" name="nom"  pattern= "^[A-Z]+[a-z]+$" required title="entrez votre nom" id="div_nom" class = "div_error"><br><br>
+        
+        <label for="Votre prénom"> Votre prénom*: </label><input type="text" name="prénom" pattern="^[A-Z]+[a-z]+$" required title="entrez votre prénom" id="div_prenom" class="div_error"><br><br>
+
+<div    pattern="" required title="appuyez sur votre genre" id="div_genre" class="div_error">
+        sexe*:
+        <input type="radio" name="sexe" id=féminin value="feminin"> féminin
+        <input type="radio" name="sexe" id= masculin value="masculin"> masculin<br><br>
+
+</div>
+
+        <label for="date">date de naissance*: </label><input type="date" name="naissance" pattern="^[0-9]{4}[-]{1}[0-9]{2}[-]{1}[0-9]{2}$" required title="entrez votre date de naissance" id="div_date"><br><br>
+        <div id="div_date" class="div_error"></div>
+
+        <label for="codepostal"> Code postal*: </label>
+        <input type="number" name="codepostal" pattern="[0-9]+$" required title="entrez votre code postal" id="div_code"><br><br>
+        <div id="div_code" class="div_error"></div>
+
+        
+        <label for="adresse"> adresse: </label>
+        <input type="text" name="adresse" pattern="^[0-30]+.[A-Za-z]+.[A-Za-z]+.[A-Za-z]+$"  required title="entrez votre adresse"  id ="div_adresse"><br><br>
+        <div id="div_adresse" class="div_error"></div>
+        
+        <label for="ville"> ville: </label>
+        <input type="text" placeholder=""  name="Ville" pattern="^[A-Z]+[a-z]+$"required title="entrez votre ville" id="div_ville"><br><br>
+        <div id="div_ville" class="div error"></div>
+        
+        <label for="Email"> Email*: </label>
+        <input type="text" placeholder="" pattern="^[a-z0-9]+[.]?[a-z0-9]*@[a-z]+[.][a-z]{2,4}$"required title="Entre votre Email"><br>
+        <div id="div_Email" class="div_error"></div>
+    
+</fieldset>
+
+<fieldset>
+        <legend><b>Votre demande</b></legend>
+        <label for="couleur">Sujet*: </label>
+        <select id="couleur"> 
+        <option value="" selected>veuillez sélèctionnez un sujet</option>
+        <option value="Bleu">mes commandes</option>
+        <option value="Rouge">Question pour un produit</option>
+        <option value="Vert">réclamation</option>
+        <option value="blanc">Autres</option>
+        </select><br>
+        Votre question*:
+        <textarea name="commentaires" rows="2" cols="20"></textarea><br>
+    </fieldset>
+        <input type="checkbox" pattern="" name="couleur3" value="traitement informatique "> *j'accepte le traitement informatique de ce formulaire<br><br>
+        <input type="submit" id="ok" value="envoyer">
+        <input type="reset" value="Annuler">
+    </form><br>
+    <br>
+    <br>
+</body>
+<footer>
+
+<ul>
+<nav>
+    <li><a href="*">Mention légales</a></li>
+    <li><a href="*">Horaires</a></li>
+    <li><a href="*">plan du site</a></li>
+</nav>
+</ul>
+</footer>  
+<script src="formulaire eval.js"></script>
+</html>
