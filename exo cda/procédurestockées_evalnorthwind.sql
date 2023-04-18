@@ -24,7 +24,7 @@ CREATE Procedure délai moyen (IN date1 VARCHAR(20),date2 VARCHAR(20));
 BEGIN
     SELECT AVG (DATETIME(date1,date2)) 
     FROM   orders 
-END
+END |
 
 DELIMITER;
     
