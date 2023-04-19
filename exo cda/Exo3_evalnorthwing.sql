@@ -50,7 +50,7 @@ WHERE `ProductID`=60 AND `OrderID`=10248;
 
 
 
--- ========================================================= pikk
+-- =========================  fin
 
 
 
@@ -100,22 +100,24 @@ DELIMITER ;
 
 -- TEST NEGATIF 
 
-USE northwind;
+
 INSERT INTO `order_details`(`OrderID`, `ProductID`, `UnitPrice`, `Quantity`, `Discount`)
 VALUES
-(10248, 1, 18.000, 8, 0);
+(10248, 30, 5, 0);
 
 
 -- TEST POSITIF 
 
-USE northwind;
+
 INSERT INTO `order_details`(`OrderID`, `ProductID`, `UnitPrice`, `Quantity`, `Discount`)
 VALUES
-(10248, 58, 13.2500, 10, 0);
+(10248, 39, 34, 5,0);
 
 
--- SUPPRESSION DE LA LIGNE AJOUTEE AVEC LE TEST POSITIF 
+-- SUPPRESSION DE LA LIGNE AJOUTEE AVEC LE TEST positif
 
 DELETE FROM `order_details`
-WHERE OrderID = 10248 AND ProductID = 58;
+WHERE productID = 39 AND OrderID=10248;
+
+
 

@@ -38,7 +38,7 @@ CREATE TABLE Produits(
    pra_pdt DECIMAL(7,2),
    pvp_pdt DECIMAL(7,2),
    pvi_pdt DECIMAL(7,2),
-   vue_pdt LOGICAL,
+   vue_pdt LOGICAL,freak like me
    stk_pdt SMALLINT,
    img_pdt VARCHAR(50),
    rff_pdt VARCHAR(50),

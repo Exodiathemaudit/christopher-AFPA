@@ -79,3 +79,4 @@ SELECT AVG (DATEDIFF(ShippedDate,OrderDate)) AS "délai livraison en jours"
 FROM orders;
 
 
+
