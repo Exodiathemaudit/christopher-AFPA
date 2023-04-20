@@ -9,7 +9,7 @@ CREATE TABLE Clients(
    com_cli VARCHAR(50) NOT NULL,
    cde_cli VARCHAR(50) NOT NULL,
    adr_cli VARCHAR(50),
-   typ_cli LOGICAL,
+   typ_cli BOOLEAN,
    rem_cli DECIMAL(4,2),
    PRIMARY KEY(num_cli)
 );
@@ -38,7 +38,7 @@ CREATE TABLE Produits(
    pra_pdt DECIMAL(7,2),
    pvp_pdt DECIMAL(7,2),
    pvi_pdt DECIMAL(7,2),
-   vue_pdt LOGICAL,freak like me
+   vue_pdt BOOLEAN,
    stk_pdt SMALLINT,
    img_pdt VARCHAR(50),
    rff_pdt VARCHAR(50),
