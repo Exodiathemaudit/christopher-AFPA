@@ -1,0 +1,22 @@
+<mxfile host="Electron" modified="2023-04-28T09:24:57.280Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="pjAiLAzdBovMmLuMfbPh" version="21.2.1" type="device">
+  <diagram name="Page-1" id="sIFnc93F_6XYgqsYrBrt">
+    <mxGraphModel dx="1600" dy="843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KMdQ61o96O0NSZiR8tAn-4" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="400" y="390" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KMdQ61o96O0NSZiR8tAn-5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="KMdQ61o96O0NSZiR8tAn-4" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="415" y="550" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="410" y="410" />
+              <mxPoint x="410" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
