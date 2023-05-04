@@ -78,3 +78,4 @@ WHERE c.CompanyName="du monde entier";
 SELECT AVG (DATEDIFF(ShippedDate,OrderDate)) AS "délai livraison en jours"
 FROM orders;
 
+

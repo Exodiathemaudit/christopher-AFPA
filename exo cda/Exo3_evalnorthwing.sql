@@ -50,7 +50,7 @@ WHERE `ProductID`=60 AND `OrderID`=10248;
 
 
 
--- =========================  fin
+-- =========================  
 
 
 
@@ -118,6 +118,7 @@ VALUES
 
 DELETE FROM `order_details`
 WHERE productID = 39 AND OrderID=10248;
+
 
 
 
